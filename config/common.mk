@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelstarBlackTheme
 
+# Wallpaper
+PRODUCT_PACKAGES += \
+    PixelstarWallpaperStub
+
 # GameSpace
 PRODUCT_PACKAGES += \
     GameSpace
