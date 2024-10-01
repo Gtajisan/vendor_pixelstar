@@ -81,8 +81,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-# Google Apps
-$(call inherit-product, vendor/google/gms/products/gms.mk)
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
@@ -108,7 +106,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
-# Strip the local variable table and the local variable type table to reduce
+# Strip the local variable table and the loca variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
