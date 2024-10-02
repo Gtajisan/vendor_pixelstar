@@ -82,7 +82,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
 # Google Apps
-$(call inherit-product, vendor/google/gms/products/gms.mk)
+#$(call inherit-product, vendor/google/gms/products/gms.mk)
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
